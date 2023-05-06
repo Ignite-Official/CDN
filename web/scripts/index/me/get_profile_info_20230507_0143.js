@@ -1,48 +1,4 @@
 /***********************************
- 프로필 / 포트폴리오 메뉴 선택 스크립트
- ***********************************/
-let toggle_sub_menu_portfolio = 1
-let toggle_sub_menu_profile = 0
-
-
-// 포트폴리오 수정하기 / 프로필 수정하기 버튼
-function Div_btn_botton(props) {
-	return(
-		<button type="button" onClick={props.function}
-				class="bg-[#340BB8] text-[18px] text-white font-[600] w-[328px] h-[48px] rounded-lg text-center mt-[150px]">
-			{props.text}
-		</button>
-	)
-}
-
-// 프로필 / 포트폴리오 메뉴 선택 스크립트
-function sub_menu_selection(mode = "portfolio") {
-	let class_div_active = "pt-[16px]"
-	let class_div_inactive = "pt-[16px] hidden"
-	let class_menu_active = "flex justify-center items-center w-[180px] h-[24px] pb-[12px] border-b-4 border-white text-white cursor-pointer"
-	let class_menu_inactive = "flex justify-center items-center w-[180px] h-[24px] pb-[12px] text-[#4B4B4B] cursor-pointer"
-
-	if (mode == "portfolio") {
-		document.getElementById("div_portfolio").className = class_div_active
-		document.getElementById("div_profile").className = class_div_inactive
-		document.getElementById("sub_menu_portfolio").className = class_menu_active
-		document.getElementById("sub_menu_profile").className = class_menu_inactive
-		toggle_sub_menu_portfolio = 1
-		toggle_sub_menu_profile = 0
-
-	} else if (mode == "profile") {
-		document.getElementById("div_portfolio").className = class_div_inactive
-		document.getElementById("div_profile").className = class_div_active
-		document.getElementById("sub_menu_portfolio").className = class_menu_inactive
-		document.getElementById("sub_menu_profile").className = class_menu_active
-		toggle_sub_menu_portfolio = 0
-		toggle_sub_menu_profile = 1
-		
-	}
-}
-
-
-/***********************************
  프로필 정보 스크립트
  ***********************************/
 
@@ -109,10 +65,7 @@ async function get_profile_info() {
 							class="w-[20px] h-[20px]" />
 						<span class="text-[#FF6B6B] text-[16px] font-[700]">0</span>
 					</div>
-		
-					<div>
-						<span class="text-[#8B8B8B] text-[12px] font-[500]">받은 리스펙</span>
-					</div>
+					<div><span class="text-[#8B8B8B] text-[12px] font-[500]">받은 리스펙</span></div>
 				</div>
 		
 				<div class="flex justify-center items-center ml-[28px] mr-[28px]">
@@ -122,13 +75,8 @@ async function get_profile_info() {
 				</div>
 		
 				<div class="flex flex-col justify-center items-center">
-					<div>
-						<span class="text-white text-[16px] font-[700]">{props.data.total_cnt}</span>
-					</div>
-		
-					<div>
-						<span class="text-[#8B8B8B] text-[12px] font-[500]">TOTAL</span>
-					</div>
+					<div><span class="text-white text-[16px] font-[700]">{props.data.total_cnt}</span></div>
+					<div><span class="text-[#8B8B8B] text-[12px] font-[500]">TOTAL</span></div>
 				</div>
 		
 				<div class="flex justify-center items-center ml-[28px] mr-[28px]">
@@ -258,7 +206,6 @@ async function get_profile_info() {
 					.then(res=> { return res.json(); })
 					.then(res=> { return res; });
 
-	console.log(data)
 	ReactDOM.render(<Div_header data={data} />, document.getElementById("div_header"))
 	ReactDOM.render(<Div_status data={data} />, document.getElementById("div_status"))
 	ReactDOM.render(<Div_profile data={data} />, document.getElementById("div_profile"))
