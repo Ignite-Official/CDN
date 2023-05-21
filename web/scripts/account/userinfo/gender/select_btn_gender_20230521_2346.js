@@ -7,6 +7,7 @@ function select_btn_gender(mode) {
 	const class_btn_female_inactive = class_btn_default + "bg-[#292929] text-[#8B8B8B] hover:bg-[#292929] hover:text-[#8B8B8B]"
 	
 	selected_gender = mode
+	
 	// 남성
 	if (mode == "male") {
 		document.getElementById("btn_gender_male").className = class_btn_male
