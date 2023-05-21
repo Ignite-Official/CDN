@@ -1,0 +1,12 @@
+// 악기 - 클릭 후 버튼 classname 변경 (배경색 변경)
+function classname_change_instrument(id, image_url) {
+	// 이미 선택된 장르인 경우
+	if (instrument_selected_list.includes(id)) {
+		document.getElementById(id).className = class_instrument_not_focused
+		instrument_selected_list = instrument_selected_list.filter((element) => element !== id)
+
+	} else {
+		document.getElementById(id).className = class_instrument_focused
+		instrument_selected_list.push(id)
+	}
+}
