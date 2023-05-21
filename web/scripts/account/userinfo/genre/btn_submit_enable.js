@@ -1,3 +1,4 @@
+// 완료 버튼 활성화 조건
 // 장르가 1개 이상 선태되어 있어야 완료 버튼이 황성화된다.
 function btn_submit_enable() {
 	if (genre_selected_list.length > 0) {
