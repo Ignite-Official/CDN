@@ -1,5 +1,5 @@
 // 포트폴리오 클릭 로그 기록
-async function click_portfolio(uuid_portfolio, url) {
+async function insert_click_portfolio(uuid_portfolio, url) {
 	const request_data = new FormData();
 	request_data.append('uuid_portfolio', uuid_portfolio);
 	request_data.append('host', window.location.href.toString());
