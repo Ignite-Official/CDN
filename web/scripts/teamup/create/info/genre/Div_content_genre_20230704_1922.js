@@ -11,7 +11,7 @@ function Div_content_genre(props) {
 
 	return(
 		<div class="flex flex-col justify-center items-center text-center w-[360px] h-fit py-[12px] pr-[16px] mx-auto">
-			<div class="grid grid-cols-4 justify-center items-center columns-4 w-full">
+			<div class="grid grid-cols-4 justify-center items-center columns-4 w-full" id="div_btn_genre_list">
 				<button class={list_genre_selected.includes("btn_genre_all")
 							? class_btn_enabled
 							: class_btn_disabled}
@@ -20,6 +20,12 @@ function Div_content_genre(props) {
 					전체
 				</button>
 				{btnList}
+				<div class="hidden" id="div_btn_genre_added_list"></div>
+				<button class={class_btn_disabled} data-modal-target="popup_genre_add" data-modal-toggle="popup_genre_add" type="button" 
+						id="btn_genre_add" name="btn_genre_add"
+						onClick={() => popup_genre_add_toggle('show')}>
+					장르 추가
+				</button>
 			</div>
 		</div>
 	)
