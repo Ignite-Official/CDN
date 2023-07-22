@@ -1,0 +1,4 @@
+const class_btn_back_enabled = "bg-[url('https://cdn.jsdelivr.net/gh/Ignite-Official/CDN/web/image/notice/20230722/btn_back_enabled.svg')] w-[163.5px] h-[48px] rounded-b-lg"
+const class_btn_back_disabled = "bg-[url('https://cdn.jsdelivr.net/gh/Ignite-Official/CDN/web/image/notice/20230722/btn_back_disabled.svg')] w-[163.5px] h-[48px] rounded-b-lg"
+const class_btn_next_enabled = "bg-[url('https://cdn.jsdelivr.net/gh/Ignite-Official/CDN/web/image/notice/20230722/btn_next_enabled.svg')] w-[163.5px] h-[48px] rounded-b-lg"
+const class_btn_next_disabled = "bg-[url('https://cdn.jsdelivr.net/gh/Ignite-Official/CDN/web/image/notice/20230722/btn_next_disabled.svg')] w-[163.5px] h-[48px] rounded-b-lg"
