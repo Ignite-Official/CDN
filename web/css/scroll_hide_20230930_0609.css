@@ -1,0 +1,31 @@
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scroll-hide::-webkit-scrollbar {
+	display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scroll-hide {
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+}
+
+.multi-line-truncate-2 {
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;  
+	overflow: hidden;
+}
+
+.multi-line-truncate-3 {
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;  
+	overflow: hidden;
+}
+
+.multi-line-truncate-4 {
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;  
+	overflow: hidden;
+}
