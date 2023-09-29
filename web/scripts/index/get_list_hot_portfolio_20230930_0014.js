@@ -119,7 +119,6 @@ async function get_list_hot_portfolio() {
 	const prev = document.querySelectorAll('#div_portfolio_prev');
 	const slider = document.querySelectorAll('#div_portfolio_slider')
 
-	console.log(slider)
 	for(let i = 0 ; i < slider.length ; i++){
 		makeSlider(slider[i], prev[i], next[i]);
 	}
