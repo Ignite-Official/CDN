@@ -4,8 +4,8 @@ async function get_list_hot_portfolio() {
 		function Div_skeleton_sub() {
 			return (
 				<div class="flex flex-col justify-start items-between bg-gray-500 rounded-lg animate-pulse
-							w-[187.5px] min-w-[187.5px] h-[250px] min-h-[250px] max-h-[250px] 
-							sm:w-[140px] sm:min-w-[140px] sm:h-[185x] sm:min-h-[185px] sm:max-h-[185px]"></div>
+							w-[187.5px] min-w-[187.5px] max-w-[187.5px] h-[250px] min-h-[250px] max-h-[250px] 
+							sm:w-[140px] sm:min-w-[140px] sm:max-w-[140px] sm:h-[185x] sm:min-h-[185px] sm:max-h-[185px]"></div>
 			)
 		}
 
