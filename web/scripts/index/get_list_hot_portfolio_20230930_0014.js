@@ -19,7 +19,7 @@ async function get_list_hot_portfolio() {
 
 	function Div_portfolio(props) {            
 		const portfolio_List = Object.keys(props.data).map((btn_data) =>
-			<div class={"flex flex-col justify-start items-between "
+			<div class={"flex flex-col justify-start items-between rounded-lg "
 					  + "bg-[linear-gradient(to_bottom,rgba(0,0,0,0),rgba(0,0,0,0.8)),url('" + props.data[btn_data].url_thumbnail + "')] bg-cover bg-center "
 					  + "w-[187.5px] min-w-[187.5px] max-w-[187.5px] h-[250px] min-h-[250px] max-h-[250px] p-[16px] "
 					  + "sm:w-[140px] sm:min-w-[140px] sm:max-w-[140px] sm:h-[185px] sm:min-h-[185px] sm:max-h-[185px] sm:p-[12px] " 
