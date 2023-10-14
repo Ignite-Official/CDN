@@ -1,5 +1,5 @@
 // 이메일 형식 확인 - 이메일 형식이 맞으면 true / 틀리면 false
-function email_form_check() {
+function email_form_check(id="txt_email") {
 	// 텍스트박스에 입력한 값 (이메일)
 	let email = document.getElementById("txt_email").value.trim()
 
