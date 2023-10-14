@@ -5,15 +5,15 @@ function password_form_check(id="txt_password", max_len = 8) {
 
 	// 값이 입력되지 않음
 	if (passwd == "" || passwd == null) {
-		return false
+		return "NOT EXIST"
 
 	// 비
 	} else if (passwd.length < max_len) {
-		return false
+		return "FAILED"
 
 	// 이메일 형식 체크 성공
 	} else {
-		return true
+		return "SUCCESS"
 
 	}
 }
