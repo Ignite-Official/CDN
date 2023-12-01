@@ -3,8 +3,8 @@ function Div_artist_card(props) {
 		<div class="flex flex-row w-full justify-center items-center">
 			<div class={    
 							props.url_image_bg == "Unknown"
-							? "grid grid-cols-1 bg-gray-900 flex flex-col content-between items-between rounded-lg p-[16px] w-full min-w-[200px] max-w-[200px] h-[250px] min-h-[250px] max-h-[250px]  hover:border hover:border-2 hover:border-gray-100 mx-auto cursor-pointer"
-							: "grid grid-cols-1 bg-[linear-gradient(to_bottom,rgba(0,0,0,0),rgba(0,0,0,0.8)),url('" + props.url_image_bg + "')] bg-cover bg-center flex flex-col content-between items-between rounded-lg p-[16px] w-full min-w-[200px] max-w-[200px] h-[250px] min-h-[250px] max-h-[250px]  hover:border hover:border-2 hover:border-gray-100 mx-auto cursor-pointer"
+							? "grid grid-cols-1 bg-gray-900 flex flex-col content-between items-between rounded-lg p-[16px] w-full min-w-[200px] max-w-[200px] h-[250px] min-h-[250px] max-h-[250px] md:w-[187.5px] md:min-w-[187.5px] md:max-w-[187.5px] hover:border hover:border-2 hover:border-gray-100 mx-auto cursor-pointer"
+							: "grid grid-cols-1 bg-[linear-gradient(to_bottom,rgba(0,0,0,0),rgba(0,0,0,0.8)),url('" + props.url_image_bg + "')] bg-cover bg-center flex flex-col content-between items-between rounded-lg p-[16px] w-full min-w-[200px] max-w-[200px] h-[250px] min-h-[250px] max-h-[250px] md:w-[187.5px] md:min-w-[187.5px] md:max-w-[187.5px] hover:border hover:border-2 hover:border-gray-100 mx-auto cursor-pointer"
 					   }
 				 onClick={() => location.href=props.url_mypage}>
 				{
