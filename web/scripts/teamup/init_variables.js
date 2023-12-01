@@ -1,0 +1,2 @@
+let class_tab_on = "text-[#AE9DE3] text-[16px] font-[600] w-fit px-[16px] py-[12px] border-b-2 border-[#AE9DE3] cursor-pointer"
+let class_tab_off = "text-[#A3A3A3] text-[16px] font-[600] w-fit px-[16px] py-[12px] cursor-pointer hover:text-[#AE9DE3] hover:border-b-2 hover:border-[#AE9DE3]"
