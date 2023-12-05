@@ -36,9 +36,9 @@ async function click_left_btn_join_cancel() {
 	}
 
 	
-	if (!toggle_click_left_btn_join) {
+	if (!toggle_click_left_btn_join_cancel) {
 		// 토글 ON
-		toggle_click_left_btn_join = true
+		toggle_click_left_btn_join_cancel = true
 		ReactDOM.render(<Div_modal_join_cancel_btn_list_loading />, document.getElementById("div_modal_join_cancel_btn_list"))
 
 
@@ -55,7 +55,7 @@ async function click_left_btn_join_cancel() {
 							.then(res=> { location.href=href });
 
 		// 토글 OFF
-		toggle_click_left_btn_join = false
+		toggle_click_left_btn_join_cancel = false
 		ReactDOM.render(<Div_modal_join_cancel_btn_list />, document.getElementById("div_modal_join_cancel_btn_list"))
 	}
 }
