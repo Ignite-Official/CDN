@@ -1,0 +1,17 @@
+async function insert_chat_log(uuid_upper) {
+	const request_data = new FormData();
+	request_data.append('href', href);
+	request_data.append('msg', document.getElementById("txt_msg_" + uuid_upper).value.trim());
+	request_data.append('uuid_upper', uuid_upper);
+	
+	await fetch("/teamup/ajax_insert_chat_log/", {
+			method: "post", 
+			headers: { "X-CSRFToken": getCookie("csrftoken"), },
+			body: request_data
+			})
+			.then(res=> { return res.json(); })
+			.then(res=> { return res; });
+
+	get_chat_log(false)
+	document.getElementById("txt_msg_" + uuid_upper).value = ""
+}
