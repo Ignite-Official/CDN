@@ -1,3 +1,4 @@
+// 내가 성생한 팀 목록
 async function get_my_team_list() {
 	function Div_team_card_sub(props) {
 		return (
