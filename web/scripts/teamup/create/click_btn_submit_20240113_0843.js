@@ -44,8 +44,6 @@ async function click_btn_submit()
 			alert("장르를 선택하지 않았습니다.")
 		} else if (data_active_role.length == 0) {
 			alert("모집할 역할을 선택하지 않았습니다.")
-		} else if (data_active_region.length == 0 && data_region_online == "NO") {
-			alert("활동 지역을 선택하지 않았습니다.\n(최소 온라인 가능 혹은 지역 1개 이상)")
 		} else if (txt_due_date == null || txt_due_date == "") {
 			alert("모집 마감 기간을 선택하지 않았습니다.");
 		} else if (getToday() > txt_due_date) {
